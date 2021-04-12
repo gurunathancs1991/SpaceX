@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack --config webpack.build.config.js",
-    "server-build": "webpack --config webpack.server.config.js"
+    "deploy": "webpack-dev-server",
+    "client-build": "webpack --config webpack.build.config.js",
+    "build": "webpack --config webpack.server.config.js",
+    "start": "npm run build && node server.js"
   },
   "dependencies": {
     "axios": "^0.18.0",

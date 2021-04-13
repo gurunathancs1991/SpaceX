@@ -1,4 +1,4 @@
-# Server Side Rendering Boilerplate
+# SpaceX Laucher programs
 
 ## Pre requirements
 * [Node.js](https://nodejs.org/)
@@ -13,10 +13,10 @@
 
 ## Getting started
 ```bash
-$ git clone https://github.com/mirchenko/react-ssr-boilerplate.git <YOUR_FOLDER_NAME>
+$ git clone https://github.com/gurunathancs1991/SpaceX.git <YOUR_FOLDER_NAME>
 $ cd <YOUR_FOLDER_NAME>
-$ yarn 
-$ yarn start
+$ npm install 
+$ npm run build
+$ npm start
 ```
 
-Service available on `localhost:8080`

@@ -1,0 +1,41 @@
+.space-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .space-item {
+    text-decoration: none;
+    color: #224758;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 24px;
+    padding: 16px;
+    box-sizing: border-box;
+    max-width: 200px;
+    flex: 0 0 200px;
+    max-height: 300px;
+    overflow: hidden; 
+    
+    & .grid-container {
+      display: grid;
+      grid: auto / auto auto;
+      grid-gap: 10px;
+      padding: 10px;
+      font-size: 10px;
+    }
+
+    & .highlight {
+      font-weight: 600;
+    }
+
+    & img {
+      width: 100%;
+    }
+
+  }
+}

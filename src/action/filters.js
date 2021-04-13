@@ -22,14 +22,14 @@ export const fetchSpaceByFilter = (year, launch, land) => async dispatch => {
 
 function frameURL(year, launch, land){
     let url = ROOT;
-    if(year){
+    if(year !=null){
         url+='&launch_year='+year
     }
-    if(launch){
-        url+= '&launch_success=true'
+    if(launch!= null){
+        url+= '&launch_success='+launch;
     }
-    if(land){
-        url+= '&land_success=true'
+    if(land != null){
+        url+= '&land_success='+land;
     }
     return url;
 }

@@ -37,7 +37,7 @@ export default class SpaceX extends Component {
     return(     
       <div className="container">
        
-      <div className="countries-container">
+      <div className="space-container">
           {data.map((item, i) => <SpaceItem key={i} {...item} />)}
         </div>
       </div>

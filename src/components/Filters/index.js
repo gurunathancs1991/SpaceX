@@ -1,30 +1,28 @@
 import YearFilterComponent from './yearfilter';
-import LaunchFilterComponent from './launchfilter';
-import LandFilterComponent from './landfilter'
-import { fetchSpaceByFilter } from "../../action/filters";
+import LaunchLandComponent from './launchfilter';
 import React, { useState, useEffect } from 'react';
 
 function FilterComponent(props){
-    const [year, setYear] = useState(undefined);
-    const [launch, setLaunch] = useState(false);
-    const [land, setLand] = useState(false);
+    const [year, setYear] = useState(null);
+    const [launch, setLaunch] = useState(null);
+    const [land, setLand] = useState(null);
     
     
     return(
         <div>
-            Filters
+            <div class="FilterHeader">Filter</div>
             <YearFilterComponent click={(e)=>{
                 setYear(e.year);
                 props.onChange(e.year, launch, land);
             }} init ={year}></YearFilterComponent>
-            <LaunchFilterComponent click={(e)=>{
+            <LaunchLandComponent click={(e)=>{
                 setLaunch(e.launch);
                 props.onChange(year, e.launch, land);
-            }} init = {launch}></LaunchFilterComponent>
-            <LandFilterComponent click={(e)=>{
+            }} init = {launch} name="launch"></LaunchLandComponent>
+            <LaunchLandComponent click={(e)=>{
                  setLand(e.land);
                  props.onChange(year, launch, e.land);
-            }} init = {land}></LandFilterComponent>
+            }} init = {land} name="land"></LaunchLandComponent>
         </div>
     )
 }

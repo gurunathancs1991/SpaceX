@@ -20,3 +20,17 @@ $ npm run build
 $ npm start
 ```
 
+## Screenshot 
+
+### Device
+
+![alt desktop](https://github.com/gurunathancs1991/SpaceX/blob/main/img/desktop.png)
+
+![alt mobile](https://github.com/gurunathancs1991/SpaceX/blob/main/img/mobile.png)
+
+
+## Publish
+
+This app hosted in below link using Heroku.
+
+https://guru-spacex-app.herokuapp.com/

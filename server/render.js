@@ -19,7 +19,7 @@ export default (pathname, store, context) => {
   <!DOCTYPE html>
       <html lang="en">
       <head>
-        <meta charset="UTF-8">
+       <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>Title</title>
       </head>
       <body>
